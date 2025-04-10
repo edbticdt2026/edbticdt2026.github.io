@@ -30,10 +30,22 @@
         .color-blue {
             background-color: #b2ccec;
         }
+		
+		.color-purple {
+            background-color: #bf4080;
+        }
 
         .color-beige {
             background-color: #fde9d9;
         }
+		
+		.color-teal {
+			background-color: #008080;
+		}
+		
+		.color-yellow {
+			background-color: #e6b800;
+		}
 
         .color-pink {
             background-color: #f2dbdb;
