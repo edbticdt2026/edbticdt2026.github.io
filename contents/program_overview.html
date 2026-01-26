@@ -48,10 +48,10 @@
             $("td[class*='color-']").each(function(i,el){
                 $(el).attr("ref",""+i);
             });
-            $("td[ref]").click(function(el){
-                var ref=$(el.currentTarget).attr("ref");
-                window.location.href = "?contents=detailed_program.html&show="+ref;
-            });
+            // $("td[ref]").click(function(el){
+            //     var ref=$(el.currentTarget).attr("ref");
+            //     window.location.href = "?contents=detailed_program.html&show="+ref;
+            // });
            
         });
       </script>
