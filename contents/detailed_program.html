@@ -1,0 +1,1926 @@
+<!-- saved from url=(0060)http://edbticdt2023.cs.uoi.gr/contents/detailed_program.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-7">
+    <link rel="stylesheet" href="css/program.css">
+    <style>
+        div.tab_head {
+            display: inline-block;
+            padding: .8em;
+            border: solid .1em rgba(161, 161, 161, 0.76);
+            border-radius: 8px 8px 0px 0px;
+            margin-right: -5px;
+            background-color: #ECECEC;
+            cursor: pointer;
+
+        }
+
+        div.tab_head_selected {
+
+            background-color: white !important;
+            color: #990000;
+        }
+
+        table.display-none {
+            display: none;
+        }
+    </style>
+    <script>
+        var clockID;
+        var yourTimeZoneFrom = +2.00; //time zone value where you are at
+
+        var d = new Date();
+        //get the timezone offset from local time in minutes
+        var tzDifference = yourTimeZoneFrom * 60 + d.getTimezoneOffset();
+        //convert the offset to milliseconds, add to targetTime, and make a new Date
+        var offset = tzDifference * 60 * 1000;
+
+        function UpdateClock() {
+            var tDate = new Date(new Date().getTime() + offset);
+            var in_hours = tDate.getHours()
+            var in_minutes = tDate.getMinutes();
+            var in_seconds = tDate.getSeconds();
+
+            if (in_minutes < 10)
+                in_minutes = '0' + in_minutes;
+            if (in_seconds < 10)
+                in_seconds = '0' + in_seconds;
+            if (in_hours < 10)
+                in_hours = '0' + in_hours;
+
+            document.getElementById('theTime').innerHTML = ""
+                + in_hours + ":"
+                + in_minutes + ":"
+                + in_seconds;
+
+        }
+        function StartClock() {
+            clockID = setInterval(UpdateClock, 500);
+        }
+
+        function KillClock() {
+            clearTimeout(clockID);
+        }
+        window.onload = function () {
+            StartClock();
+        }
+
+
+
+
+    </script>
+
+</head>
+
+<body class="vsc-initialized" data-new-gr-c-s-check-loaded="14.1155.0" data-gr-ext-installed="" br-mode="off"
+    saccades-color="" fixation-strength="2" saccades-interval="0"
+    style="--fixation-edge-opacity: 80%; --br-line-height: 1; --br-boldness: 600;">
+    <h2 style="font-weight: bold; color: rgb(204, 0, 0);">Detailed Program</h2>
+    <p> Times are displayed in Tampere local time (UTC+2).</p>
+
+    <h5>Current time in Tampere (UTC+2): <span id="theTime"></span></h5><br>
+
+    <!-- <div class="tab_head tab_head_selected" id-ref="day-0" id="tabd0">
+        <b>Go to Day 0</b>
+    </div> -->
+    <div class="tab_head tab_head_selected" id-ref="day-1" id="tabd1">
+        <b>Go to Day 1</b>
+    </div>
+    <div class="tab_head" id-ref="day-2" id="tabd2">
+        <b>Go to Day 2</b>
+    </div>
+    <div class="tab_head" id-ref="day-3" id="tabd3">
+        <b>Go to Day 3</b>
+    </div>
+    <div class="tab_head" id-ref="day-4" id="tabd4">
+        <b>Go to Day 4</b>
+    </div>
+
+    <!-- <table class="main-table" id="day-0">
+        <tbody>
+            <tr class="void-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="header">
+                <td colspan="13"><b>Day 0: Sunday, March 24th, 2024</b></td>
+            </tr>
+            <tr>
+                <td>
+                    3:00 PM<br />-<br />4:00 PM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Welcome Desk]</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4:00 PM<br />-<br />7:00 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10" ref="d0_spec_event_abi">
+                    <b>Special Event:</b> <i>An EDBT/ICDT 2024 event in the honor of Serge Abiteboul</i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7:00 PM<br />-<br />8:00 PM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Welcome Desk]</b>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+    <table class="main-table" id="day-1">
+        <tbody>
+            <tr class="void-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="header">
+                <td colspan="13"><b>Day 1: Tuesday, March 24, 2026</b></td>
+            </tr>
+            <tr>
+                <td>
+                    8:00 AM<br />-<br />8:40 AM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Main Building Entrance]</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8:40 AM<br />-<br />9:00 AM
+                </td>
+                <td colspan="12">
+                    <b>ICDT Opening [A1 Auditorium]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    9:00 AM<br />-<br />10:00 AM
+                </td>
+                <td class="color-orange" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b> EDBT/ICDT Keynote: </b><i>Query Decompositions and All That</i>
+                    <br />
+                    (Reinhard Pichler)
+                    <br />
+                    <!-- [Session Chair: Graham Cormode] -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><i>DOLAP 2024 Opening</i><br />(Enrico Gallinucci, Matteo Lissandrini)</li>
+                        <li><b>Keynote: </b><i>Data, more data, too much data</i><br />(Tova Milo)</li>
+                        <li>[Best Paper] <i>Adaptive Handling of Out-of-order Streams in Conformance
+                                Checking</i><br />(Kristo Raun, Riccardo Tommasini, Ahmed Awad)</li>
+                    </ul> -->
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+            <tr>
+                <td class="color-yellow" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>BMDA:</b> 8th International Workshop on Big Mobility Data Analytics
+                    <br />
+                    <!-- <ul>
+                        <li><i>BMDA 2024 Opening</i><br />
+                            (Mirco Nanni, Alessandra Raffaetà, Panagiotis Tampakis, Yannis Theodoridis)</li>
+                        <li><i>Path-based Traffic Flow Prediction</i><br />
+                            (Efstratios Karkanis, Nikos Pelekis, Eva Chondrodima and Yannis Theodoridis)</li>
+                        <li>[Online Presentation] <i>A Study on ETA Prediction using Machine Learning and Recovered Routes</i><br />
+                            (Arjanit Arifi, Panagiotis Bouros and Theodoros Chondrogiannis)</li>
+                        <li>[Online Presentation] <i>Pythia: Distributed Pattern-based Future Location Prediction of Moving Objects</i><br />
+                            (Panagiotis Tampakis and Nikos Pelekis)</li>
+                    </ul> -->
+
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td rowspan="4">
+                    10:00 AM<br />-<br />10:30 AM
+                </td>
+                <td class="color-orange" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b> ICDT Test of Time Award</b>
+                    <br />                    
+                    <!-- [Session Chair: Graham Cormode] -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><i>DOLAP 2024 Opening</i><br />(Enrico Gallinucci, Matteo Lissandrini)</li>
+                        <li><b>Keynote: </b><i>Data, more data, too much data</i><br />(Tova Milo)</li>
+                        <li>[Best Paper] <i>Adaptive Handling of Out-of-order Streams in Conformance
+                                Checking</i><br />(Kristo Raun, Riccardo Tommasini, Ahmed Awad)</li>
+                    </ul> -->
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+            <tr>
+                <td class="color-yellow" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>BMDA:</b> 8th International Workshop on Big Mobility Data Analytics
+                    <br />
+                    <!-- <ul>
+                        <li><i>BMDA 2024 Opening</i><br />
+                            (Mirco Nanni, Alessandra Raffaetà, Panagiotis Tampakis, Yannis Theodoridis)</li>
+                        <li><i>Path-based Traffic Flow Prediction</i><br />
+                            (Efstratios Karkanis, Nikos Pelekis, Eva Chondrodima and Yannis Theodoridis)</li>
+                        <li>[Online Presentation] <i>A Study on ETA Prediction using Machine Learning and Recovered Routes</i><br />
+                            (Arjanit Arifi, Panagiotis Bouros and Theodoros Chondrogiannis)</li>
+                        <li>[Online Presentation] <i>Pythia: Distributed Pattern-based Future Location Prediction of Moving Objects</i><br />
+                            (Panagiotis Tampakis and Nikos Pelekis)</li>
+                    </ul> -->
+
+                </td>
+            </tr>
+
+
+
+
+
+
+
+
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Main Auditorium Foyer]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="7">
+                    11:00 AM<br />-<br />12:30 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    ICDT Session 1:<b> <!--Best paper session and conjunctive queries</b>-->
+                    <br />
+                    <!-- [Session Chair: Hubie Chen]
+                    <br /> -->
+                    <!-- <ul>
+                        <li>[Best Newcomer] <i>Direct Access for Conjunctive Queries with Negation</i><br />(Florent
+                            Capelli and Oliver Irwin)</li>
+                        <li>[Best Paper] <i>Finding Smallest Witnesses for Conjunctive Queries</i><br />(Xiao Hu and
+                            Stavros Sintos)</li>
+                        <li><i>Direct Access for Answers to Conjunctive Queries with Aggregation</i><br /> (Idan Eldar,
+                            Nofar Carmeli and Benny Kimelfeld)</li>
+                        <li><i>Conjunctive Queries on Probabilistic Graphs: The Limits of Approximability</i><br />
+                            (Antoine Amarilli, Timothy van Bremen and Kuldeep S. Meel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-dark-pink" colspan="2">
+                    <b>A3 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DataEd: </b> 5th International Workshop on Data Systems Education
+                    <br />
+                    <!-- <ul>
+                        <li>[Online Presentation] <i>A JSON Document Algebra for Query Optimization</i><br />
+                            (Tomas Felipe LLano-Rios, Mohamed Khalefa, Antonio Badia)</li>
+                        <li>[S] <i>Context Based Completeness Assessment for Data Warehouse Hierarchies</i><br />
+                            (Camila Sanz, Adriana Marotta)</li>
+                        <li>[S] <i>An Efficient Diversity-Aware Method for the Empty-Answer Problem </i><br />
+                            (Yuto Ikeda, Chuan Xiao, Makoto Onizuka)</li>
+                        <li><i>HealthMesh: An Architectural Framework for Federated Healthcare Data Management</i><br />
+                            (Aniol Bisquert Parés, Achraf Hmimou, Josep L Berral, Alberto Gutierrez-Torre, Oscar Romer)
+                        </li>
+                        <li><i>Towards a Process-Driven Design of Data Platforms</i><br />
+                            (Matteo Francia, Matteo Golfarelli, Manuele Pasini)</li>
+                        <li>[S] <i>Discovery of Semantic Non-Syntactic Joins</i><br />
+                            (Marc Maynou, Sergi Nadal)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-teal" colspan="2">
+                    <b>C6 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>TGD:</b> 2nd International Workshop on Transforming Graph Data (TGD)
+                    <br />
+                    <!-- <ul>
+                        <li><i>Building Foundations for Inclusiveness through Expert-Annotated Data</i><br />
+                            (Moreno La Quatra, Salvatore Greco, Luca Cagliero, Michela Tonti, Francesca Dragotto,
+                            Rachele Raus, Stefania Cavagnoli and Tania Cerquitelli)</li>
+                        <li><i>Deep Spatio-Temporal Encoding: Achieving Higher Accuracy by Aligning with External
+                                Real-World Data</i><br />
+                            (Chen Jiang, Wenlu Wang, Jingjing Li, Naiqing Pan and Wei-Shinn Ku)</li>
+                        <li><i>Extreme Classification of European Union Law Documents driven by Entity
+                                Embeddings</i><br />
+                            (Irene Benedetto, Luca Cagliero and Francesco Tarasconi)</li>
+                        <li><i>On the extraction of meaningful RNA interactions from Scientific Publications through
+                                LLMs and SPIRES</i><br />
+                            (Emanuele Cavalleri and Marco Mesiti)</li>
+                        <li><i>Examining the Impact of Multi-Objective Recommender Systems on Providers Bias</i><br />
+                            (Reza Shafiloo and Kostas Stefanidis)</li>
+                        <li><i>DreamShot: Teaching Cinema Shots to Latent Diffusion Models</i><br />
+                            (Tommaso Massaglia, Bartolomeo Vacchetti and Tania Cerquitelli)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-coral" colspan="2">
+                    <b>A4 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>Industrial Event</b>
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i> Maritime trajectory classification and clustering: problem definition
+                                and solutions</i><br />
+                            (Konstantinos Tserpes)</li>
+                        <li><i>Detecting the spatiotemporal characteristics of the supply-chain disruption and
+                                estimating its short term effects</i><br />
+                            (Giannis Spiliopoulos, Cesar Ducruet, Leonardo Millefiori, Paolo Braca and Dimitris Zissis)
+                        </li>
+                        <li><i>Using semantic trajectories for spatio-temporal characterisation of underwater
+                                noise</i><br />
+                            (Giulia Rovinelli, Davide Rocchesso, Marta Simeoni and Alessandra Raffaetà)</li>
+                    </ul> -->
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b>[Online Presentation] <i>Explaining Health Predictions in the era of LLMs:
+                                an initial investigation </i><br />(Tommaso Di Noia)</li>
+                        <li>[Online presentation] <i>Ride-Sharing in Medical Transportations: Dealing with Temporal
+                                Requirements</i><br />(Giovanni Alberto Beltrame, Carlo Combi, Alessandro Farinelli,
+                            Roberto Posenato and Giuseppe Pozzi)</li>
+                        <li><b>Tutorial: </b><i>Advanced cyberinfrastructure for large-scale health data analysis
+                            </i><br />(Rao Praveen)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-yellow" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>BMDA:</b> 8th International Workshop on Big Mobility Data Analytics
+                    <br />
+                    <!-- <ul>
+                        <li><i>BMDA 2024 Opening</i><br />
+                            (Mirco Nanni, Alessandra Raffaetà, Panagiotis Tampakis, Yannis Theodoridis)</li>
+                        <li><i>Path-based Traffic Flow Prediction</i><br />
+                            (Efstratios Karkanis, Nikos Pelekis, Eva Chondrodima and Yannis Theodoridis)</li>
+                        <li>[Online Presentation] <i>A Study on ETA Prediction using Machine Learning and Recovered Routes</i><br />
+                            (Arjanit Arifi, Panagiotis Bouros and Theodoros Chondrogiannis)</li>
+                        <li>[Online Presentation] <i>Pythia: Distributed Pattern-based Future Location Prediction of Moving Objects</i><br />
+                            (Panagiotis Tampakis and Nikos Pelekis)</li>
+                    </ul> -->
+
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12" class="padding-20">
+                    <b>Lunch Break</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="7">
+                    2:00 PM<br />-<br />3:00 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    ICDT Invited Lecture:<b> <a href="?contents=invited_ICDT_lecture.html">Building Relational Circuits</a></b>
+                    <br />
+                    (Florent Capelli)
+                    <br/>
+                    <!-- [Session Chair: Antoine Amarilli]
+                    <br /> -->
+                    <!-- <ul>
+                        <li>[Invited Tutorial] <i>Rule-based Ontologies: From Semantics to Syntax</i><br />(Andreas
+                            Pieris)</li>
+                        <li><i>Optimally Rewriting Formulas and Database Queries: A Confluence of Term Rewriting,
+                                Structural Decomposition, and Complexity</i><br /> (Hubie Chen and Stefan Mengel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-dark-pink" colspan="2">
+                    <b>A3 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DataEd: </b> 5th International Workshop on Data Systems Education
+                    <br />
+                    <!-- <ul>
+                        <li>[Online Presentation] <i>A JSON Document Algebra for Query Optimization</i><br />
+                            (Tomas Felipe LLano-Rios, Mohamed Khalefa, Antonio Badia)</li>
+                        <li>[S] <i>Context Based Completeness Assessment for Data Warehouse Hierarchies</i><br />
+                            (Camila Sanz, Adriana Marotta)</li>
+                        <li>[S] <i>An Efficient Diversity-Aware Method for the Empty-Answer Problem </i><br />
+                            (Yuto Ikeda, Chuan Xiao, Makoto Onizuka)</li>
+                        <li><i>HealthMesh: An Architectural Framework for Federated Healthcare Data Management</i><br />
+                            (Aniol Bisquert Parés, Achraf Hmimou, Josep L Berral, Alberto Gutierrez-Torre, Oscar Romer)
+                        </li>
+                        <li><i>Towards a Process-Driven Design of Data Platforms</i><br />
+                            (Matteo Francia, Matteo Golfarelli, Manuele Pasini)</li>
+                        <li>[S] <i>Discovery of Semantic Non-Syntactic Joins</i><br />
+                            (Marc Maynou, Sergi Nadal)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-teal" colspan="2">
+                    <b>C6 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>TGD:</b> 2nd International Workshop on Transforming Graph Data (TGD)
+                    <br />
+                    <!-- <ul>
+                        <li><i>Building Foundations for Inclusiveness through Expert-Annotated Data</i><br />
+                            (Moreno La Quatra, Salvatore Greco, Luca Cagliero, Michela Tonti, Francesca Dragotto,
+                            Rachele Raus, Stefania Cavagnoli and Tania Cerquitelli)</li>
+                        <li><i>Deep Spatio-Temporal Encoding: Achieving Higher Accuracy by Aligning with External
+                                Real-World Data</i><br />
+                            (Chen Jiang, Wenlu Wang, Jingjing Li, Naiqing Pan and Wei-Shinn Ku)</li>
+                        <li><i>Extreme Classification of European Union Law Documents driven by Entity
+                                Embeddings</i><br />
+                            (Irene Benedetto, Luca Cagliero and Francesco Tarasconi)</li>
+                        <li><i>On the extraction of meaningful RNA interactions from Scientific Publications through
+                                LLMs and SPIRES</i><br />
+                            (Emanuele Cavalleri and Marco Mesiti)</li>
+                        <li><i>Examining the Impact of Multi-Objective Recommender Systems on Providers Bias</i><br />
+                            (Reza Shafiloo and Kostas Stefanidis)</li>
+                        <li><i>DreamShot: Teaching Cinema Shots to Latent Diffusion Models</i><br />
+                            (Tommaso Massaglia, Bartolomeo Vacchetti and Tania Cerquitelli)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-gray" colspan="2">
+                    <b>A4 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>QuaLLM-KG:</b> 1st International Workshop on Quality in Large Language Models and Knowledge Graphs
+                    <br />
+                    <!-- <ul>
+                        <li><i>Shapelets Evaluation using Silhouettes for Time Series Classification</i><br />
+                            (Adam Charane, Matteo Ceccarello, Johann Gamper)</li>
+                        <li>[S] <i>A Data-Science Pipeline to Enable the Interpretability of Many-Objective Feature
+                                Selection </i><br />
+                            (Uchechukwu F Njoku, Alberto Abello, Besim Bilalli, Gianluca Bontempi)</li>
+                        <li>[S] <i>SQUIRREL 2.0: Fairness & Explanations for Sequential Group Recommendations</i><br />
+                            (Md Mahade Hasan, Soha Pervez, Maria Stratigi, Kostas Stefanidis)</li>
+                        <li><i>Graph XAI: Graph-agumented AI with Accuracy, Depth, Explainability, and
+                                Velocity</i><br />
+                            (Ricky Sun, Yuri Simione, Jason Zhang, Victor Wang)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b>[Online Presentation] <i>Explaining Health Predictions in the era of LLMs:
+                                an initial investigation </i><br />(Tommaso Di Noia)</li>
+                        <li>[Online presentation] <i>Ride-Sharing in Medical Transportations: Dealing with Temporal
+                                Requirements</i><br />(Giovanni Alberto Beltrame, Carlo Combi, Alessandro Farinelli,
+                            Roberto Posenato and Giuseppe Pozzi)</li>
+                        <li><b>Tutorial: </b><i>Advanced cyberinfrastructure for large-scale health data analysis
+                            </i><br />(Rao Praveen)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-beige" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>XAI4Science:</b> 1st International Workshop on Explainable Data Science and Machine Learning for the Sciences
+                    <br />
+                    <!-- <ul>
+                        <li><i>In time recommendations through an Associative Classifier and LookBackApriori: a case
+                                study</i><br />
+                            (Anna Dalla Vecchia, Niccolò Marastoni and Elisa Quintarelli)</li>
+                        <li><i>Online Prediction Threshold Optimization Under Semi-deferred Labelling</i><br />
+                            (Yorick Spenrath, Marwan Hassani and Boudewijn Van Dongen)</li>
+                        <li><i>MATILDA: Inclusive Data Science Pipelines Design through Computational
+                                Creativity</i><br />
+                            (Genoveva Vargas-Solar, Santiago Negrete Yankelevich, Javier Alfonso Espinosa-Oviedo, Khalid
+                            Belhajjame and José-Luis Zechinelli-Martini)</li>
+                        <li><i>Diversity in spatio-textual data objects</i><br />
+                            (Andreas Alamanos and Akrivi Vlachou)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="6">
+                    3:00 PM<br />-<br />3:30 PM
+                </td>                
+                <td class="color-dark-pink" colspan="2">
+                    <b>A3 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DataEd: </b> 5th International Workshop on Data Systems Education
+                    <br />
+                    <!-- <ul>
+                        <li>[Online Presentation] <i>A JSON Document Algebra for Query Optimization</i><br />
+                            (Tomas Felipe LLano-Rios, Mohamed Khalefa, Antonio Badia)</li>
+                        <li>[S] <i>Context Based Completeness Assessment for Data Warehouse Hierarchies</i><br />
+                            (Camila Sanz, Adriana Marotta)</li>
+                        <li>[S] <i>An Efficient Diversity-Aware Method for the Empty-Answer Problem </i><br />
+                            (Yuto Ikeda, Chuan Xiao, Makoto Onizuka)</li>
+                        <li><i>HealthMesh: An Architectural Framework for Federated Healthcare Data Management</i><br />
+                            (Aniol Bisquert Parés, Achraf Hmimou, Josep L Berral, Alberto Gutierrez-Torre, Oscar Romer)
+                        </li>
+                        <li><i>Towards a Process-Driven Design of Data Platforms</i><br />
+                            (Matteo Francia, Matteo Golfarelli, Manuele Pasini)</li>
+                        <li>[S] <i>Discovery of Semantic Non-Syntactic Joins</i><br />
+                            (Marc Maynou, Sergi Nadal)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-teal" colspan="2">
+                    <b>C6 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>TGD:</b> 2nd International Workshop on Transforming Graph Data (TGD)
+                    <br />
+                    <!-- <ul>
+                        <li><i>Building Foundations for Inclusiveness through Expert-Annotated Data</i><br />
+                            (Moreno La Quatra, Salvatore Greco, Luca Cagliero, Michela Tonti, Francesca Dragotto,
+                            Rachele Raus, Stefania Cavagnoli and Tania Cerquitelli)</li>
+                        <li><i>Deep Spatio-Temporal Encoding: Achieving Higher Accuracy by Aligning with External
+                                Real-World Data</i><br />
+                            (Chen Jiang, Wenlu Wang, Jingjing Li, Naiqing Pan and Wei-Shinn Ku)</li>
+                        <li><i>Extreme Classification of European Union Law Documents driven by Entity
+                                Embeddings</i><br />
+                            (Irene Benedetto, Luca Cagliero and Francesco Tarasconi)</li>
+                        <li><i>On the extraction of meaningful RNA interactions from Scientific Publications through
+                                LLMs and SPIRES</i><br />
+                            (Emanuele Cavalleri and Marco Mesiti)</li>
+                        <li><i>Examining the Impact of Multi-Objective Recommender Systems on Providers Bias</i><br />
+                            (Reza Shafiloo and Kostas Stefanidis)</li>
+                        <li><i>DreamShot: Teaching Cinema Shots to Latent Diffusion Models</i><br />
+                            (Tommaso Massaglia, Bartolomeo Vacchetti and Tania Cerquitelli)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-gray" colspan="2">
+                    <b>A4 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>QuaLLM-KG:</b> 1st International Workshop on Quality in Large Language Models and Knowledge Graphs
+                    <br />
+                    <!-- <ul>
+                        <li><i>Shapelets Evaluation using Silhouettes for Time Series Classification</i><br />
+                            (Adam Charane, Matteo Ceccarello, Johann Gamper)</li>
+                        <li>[S] <i>A Data-Science Pipeline to Enable the Interpretability of Many-Objective Feature
+                                Selection </i><br />
+                            (Uchechukwu F Njoku, Alberto Abello, Besim Bilalli, Gianluca Bontempi)</li>
+                        <li>[S] <i>SQUIRREL 2.0: Fairness & Explanations for Sequential Group Recommendations</i><br />
+                            (Md Mahade Hasan, Soha Pervez, Maria Stratigi, Kostas Stefanidis)</li>
+                        <li><i>Graph XAI: Graph-agumented AI with Accuracy, Depth, Explainability, and
+                                Velocity</i><br />
+                            (Ricky Sun, Yuri Simione, Jason Zhang, Victor Wang)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b>[Online Presentation] <i>Explaining Health Predictions in the era of LLMs:
+                                an initial investigation </i><br />(Tommaso Di Noia)</li>
+                        <li>[Online presentation] <i>Ride-Sharing in Medical Transportations: Dealing with Temporal
+                                Requirements</i><br />(Giovanni Alberto Beltrame, Carlo Combi, Alessandro Farinelli,
+                            Roberto Posenato and Giuseppe Pozzi)</li>
+                        <li><b>Tutorial: </b><i>Advanced cyberinfrastructure for large-scale health data analysis
+                            </i><br />(Rao Praveen)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-beige" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>XAI4Science:</b> 1st International Workshop on Explainable Data Science and Machine Learning for the Sciences
+                    <br />
+                    <!-- <ul>
+                        <li><i>In time recommendations through an Associative Classifier and LookBackApriori: a case
+                                study</i><br />
+                            (Anna Dalla Vecchia, Niccolò Marastoni and Elisa Quintarelli)</li>
+                        <li><i>Online Prediction Threshold Optimization Under Semi-deferred Labelling</i><br />
+                            (Yorick Spenrath, Marwan Hassani and Boudewijn Van Dongen)</li>
+                        <li><i>MATILDA: Inclusive Data Science Pipelines Design through Computational
+                                Creativity</i><br />
+                            (Genoveva Vargas-Solar, Santiago Negrete Yankelevich, Javier Alfonso Espinosa-Oviedo, Khalid
+                            Belhajjame and José-Luis Zechinelli-Martini)</li>
+                        <li><i>Diversity in spatio-textual data objects</i><br />
+                            (Andreas Alamanos and Akrivi Vlachou)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            
+
+
+
+
+            <tr>
+                <td rowspan="2">
+
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Main Auditorium Foyer]</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-beige" colspan="2">
+                    <b>A2b Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>XAI4Science:</b> 1st International Workshop on Explainable Data Science and Machine Learning for the Sciences
+                    <br />
+                    <!-- <ul>
+                        <li><i>In time recommendations through an Associative Classifier and LookBackApriori: a case
+                                study</i><br />
+                            (Anna Dalla Vecchia, Niccolò Marastoni and Elisa Quintarelli)</li>
+                        <li><i>Online Prediction Threshold Optimization Under Semi-deferred Labelling</i><br />
+                            (Yorick Spenrath, Marwan Hassani and Boudewijn Van Dongen)</li>
+                        <li><i>MATILDA: Inclusive Data Science Pipelines Design through Computational
+                                Creativity</i><br />
+                            (Genoveva Vargas-Solar, Santiago Negrete Yankelevich, Javier Alfonso Espinosa-Oviedo, Khalid
+                            Belhajjame and José-Luis Zechinelli-Martini)</li>
+                        <li><i>Diversity in spatio-textual data objects</i><br />
+                            (Andreas Alamanos and Akrivi Vlachou)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="6">
+                    4:00 PM<br />-<br />5:30 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    ICDT Session 2:<b> <!--Algorithmic approaches--></b>
+                    <br />
+                    <!-- [Session Chair: Jan van den Bussche]
+                    <br /> -->
+                    <!-- <ul>
+                        <li><i>Subgraph Enumeration in Optimal I/O Complexity</i><br />(Shiyuan Deng and Yufei Tao)</li>
+                        <li><i>Communication Cost of Joins over Federated Data</i><br />(Tamara Cucumides and Juan L.
+                            Reutter)</li>
+                        <li><i>Computing Data Distribution from Query Selectivities</i><br />(Pankaj Agarwal, Rahul
+                            Raychaudhury, Stavros Sintos and Jun Yang)</li>
+                        <li><i>Information inequality problem over set functions</i><br />(Miika Hannula)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>             
+                <td class="color-dark-pink" colspan="2">
+                    <b>A3 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DataEd: </b> 5th International Workshop on Data Systems Education
+                    <br />
+                    <!-- <ul>
+                        <li>[Online Presentation] <i>A JSON Document Algebra for Query Optimization</i><br />
+                            (Tomas Felipe LLano-Rios, Mohamed Khalefa, Antonio Badia)</li>
+                        <li>[S] <i>Context Based Completeness Assessment for Data Warehouse Hierarchies</i><br />
+                            (Camila Sanz, Adriana Marotta)</li>
+                        <li>[S] <i>An Efficient Diversity-Aware Method for the Empty-Answer Problem </i><br />
+                            (Yuto Ikeda, Chuan Xiao, Makoto Onizuka)</li>
+                        <li><i>HealthMesh: An Architectural Framework for Federated Healthcare Data Management</i><br />
+                            (Aniol Bisquert Parés, Achraf Hmimou, Josep L Berral, Alberto Gutierrez-Torre, Oscar Romer)
+                        </li>
+                        <li><i>Towards a Process-Driven Design of Data Platforms</i><br />
+                            (Matteo Francia, Matteo Golfarelli, Manuele Pasini)</li>
+                        <li>[S] <i>Discovery of Semantic Non-Syntactic Joins</i><br />
+                            (Marc Maynou, Sergi Nadal)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-teal" colspan="2">
+                    <b>C6 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>TGD:</b> 2nd International Workshop on Transforming Graph Data (TGD)
+                    <br />
+                    <!-- <ul>
+                        <li><i>Building Foundations for Inclusiveness through Expert-Annotated Data</i><br />
+                            (Moreno La Quatra, Salvatore Greco, Luca Cagliero, Michela Tonti, Francesca Dragotto,
+                            Rachele Raus, Stefania Cavagnoli and Tania Cerquitelli)</li>
+                        <li><i>Deep Spatio-Temporal Encoding: Achieving Higher Accuracy by Aligning with External
+                                Real-World Data</i><br />
+                            (Chen Jiang, Wenlu Wang, Jingjing Li, Naiqing Pan and Wei-Shinn Ku)</li>
+                        <li><i>Extreme Classification of European Union Law Documents driven by Entity
+                                Embeddings</i><br />
+                            (Irene Benedetto, Luca Cagliero and Francesco Tarasconi)</li>
+                        <li><i>On the extraction of meaningful RNA interactions from Scientific Publications through
+                                LLMs and SPIRES</i><br />
+                            (Emanuele Cavalleri and Marco Mesiti)</li>
+                        <li><i>Examining the Impact of Multi-Objective Recommender Systems on Providers Bias</i><br />
+                            (Reza Shafiloo and Kostas Stefanidis)</li>
+                        <li><i>DreamShot: Teaching Cinema Shots to Latent Diffusion Models</i><br />
+                            (Tommaso Massaglia, Bartolomeo Vacchetti and Tania Cerquitelli)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-gray" colspan="2">
+                    <b>A4 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>QuaLLM-KG:</b> 1st International Workshop on Quality in Large Language Models and Knowledge Graphs
+                    <br />
+                    <!-- <ul>
+                        <li><i>Shapelets Evaluation using Silhouettes for Time Series Classification</i><br />
+                            (Adam Charane, Matteo Ceccarello, Johann Gamper)</li>
+                        <li>[S] <i>A Data-Science Pipeline to Enable the Interpretability of Many-Objective Feature
+                                Selection </i><br />
+                            (Uchechukwu F Njoku, Alberto Abello, Besim Bilalli, Gianluca Bontempi)</li>
+                        <li>[S] <i>SQUIRREL 2.0: Fairness & Explanations for Sequential Group Recommendations</i><br />
+                            (Md Mahade Hasan, Soha Pervez, Maria Stratigi, Kostas Stefanidis)</li>
+                        <li><i>Graph XAI: Graph-agumented AI with Accuracy, Depth, Explainability, and
+                                Velocity</i><br />
+                            (Ricky Sun, Yuri Simione, Jason Zhang, Victor Wang)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DOLAP:</b> 28th International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b>[Online Presentation] <i>Explaining Health Predictions in the era of LLMs:
+                                an initial investigation </i><br />(Tommaso Di Noia)</li>
+                        <li>[Online presentation] <i>Ride-Sharing in Medical Transportations: Dealing with Temporal
+                                Requirements</i><br />(Giovanni Alberto Beltrame, Carlo Combi, Alessandro Farinelli,
+                            Roberto Posenato and Giuseppe Pozzi)</li>
+                        <li><b>Tutorial: </b><i>Advanced cyberinfrastructure for large-scale health data analysis
+                            </i><br />(Rao Praveen)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="color-purple" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DARLI-AP:</b> 10th International Workshop on Data Analytics solutions for Real-LIfe APplications
+                    <br />
+                    <!-- <ul>
+                        <li><b>Keynote: </b><i>Don’t call me just “Outlier”</i><br />
+                            (Luca Cagliero)</li>
+                        <li><i>Explainable Anomaly Detection in Renewable Energy Power Plants by Learning
+                                Multidimensional Normality Models</i><br />
+                            (Carsten Kleiner)</li>
+                        <li><i>Statistical Modeling vs. Machine Learning for Deduplication of Customer Records</i><br />
+                            (Witold Andrzejewski, Bartosz Bebel, Pawel Boinski, Justyna Kowalewska, Agnieszka Marszalek
+                            and Robert Wrembel)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12" class="padding-15">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    6:00 PM<br />-<br />7:00 PM
+                </td>
+                <td colspan="12" class="color-pink padding-30">
+                    <b>Guided Walking Tour or Moomin Museum</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    7:00 PM<br />-<br />9:00 PM
+                </td>
+                <td colspan="12" class="color-pink padding-30">
+                    <b>Welcome Reception at the Old City Hall</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="main-table  display-none" id="day-2">
+        <tbody>
+            <tr class="void-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="header">
+                <td colspan="13"><b>Day 2: Wednesday, March 25, 2026</b></td>
+            </tr>
+            <tr>
+                <td>
+                    8:00 AM<br />-<br />9:00 AM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Welcome Desk]</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9:00 AM<br />-<br />10:30 AM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT Opening</b>
+                    <br />
+                    [Session Chairs: Letizia Tanca, Qiong Luo, Giuseppe Polese, Loredana Caruccio]
+                    <br />
+                    <br />
+                    <b>EDBT/ICDT Keynote:</b> <i>Adaptive database systems: Navigating chaos in a Heterogeneous
+                        Landscape</i>
+                    <br />
+                    (Anastasia Ailamaki)
+                    <br />
+                    [Session Chair: Qiong Luo]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Bar Buvette]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    11:00 AM<br />-<br />12:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 4: <b>Structural approaches</b>
+                    <br />
+                    [Session Chair: Sudeepa Roy]
+                    <br />
+                    <ul>
+                        <li><i>On the Convergence Rate of Linear Datalogo over Stable Semirings</i><br />(Sungjin Im,
+                            Benjamin Moseley, Hung Ngo and Kirk Pruhs)</li>
+                        <li><i>Right-Adjoints for Datalog Programs</i><br />(Balder ten Cate, Victor Dalmau and Jakub
+                            Oprsal)</li>
+                        <li><i>When do homomorphism counts help in query algorithms?</i><br />(Balder ten Cate, Victor
+                            Dalmau, Phokion Kolaitis and Wei-Lin Wu)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 1: <b>Performance and Scalability</b>
+                    <br />
+                    [Session Chair: Qiong Luo]
+                    <br />
+                    <ul>
+                        <li>[Experiments &amp; Analysis]<i> Performance Analysis of Distributed GPU-Accelerated Task-Based
+                                Workflows</i><br />(Marcos N. L. de Carvalho, Anna Queralt, Oscar Romero, Alkis
+                            Simitsis, Cristian Tatu and Rosa Maria Badia)</li>
+                        <li><i> Efficient Proximity Search in Time-evolving High-dimensional Data using Multi-level
+                                Block Indexing</i><br />(Changhun Han, Suji Kim and Ha-Myung Park)</li>
+                        <li>[Vision Paper] <i>Stateful Entities: Object-oriented Cloud Applications as Distributed
+                                Dataflows</i><br />(Kyriakos Psarakis, Wouter Zorgdrager, Marios Fragkoulis, Guido C.
+                            Salvaneschi and Asterios Katsifodimos)</li>
+                        <li>[S] <i>PyFroid: Scaling Data Analysis on a Commodity Workstation</i><br />(Venkatesh Emani,
+                            Avrilia Floratou and Carlo Curino)</li>
+                        <li>[Online Presentation] <i>Optimizing Goodput through Sharing for Batch Analytics with
+                                Deadlines</i><br />(Srinivas Karthik Venkatesh, Panagiotis Sioulas, Ahana Pradhan,
+                            Raghunandan Subramanya, Ioannis Mytilinis and Anastasia Ailamaki)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 2: <b>Data Ethics</b>
+                    <br />
+                    [Session Chair: Donatella Firmani]
+                    <br />
+                    <ul>
+                        <li><i>Balancing Utility and Fairness in Submodular Maximization</i><br />(Yanhao Wang, Yuchen
+                            Li, Francesco Bonchi and Ying Wang)</li>
+                        <li><i> Data Coverage for Detecting Representation Bias in Image Datasets: A Crowdsourcing
+                                Approach</i><br />(Melika Mousavi, Nima Shahbazi and Abolfazl Asudeh)</li>
+                        <li><i> Fair Spatial Indexing: A paradigm for Group Spatial Fairness</i><br />(Sina Shaham,
+                            Gabriel Ghinita and Cyrus Shahabi)</li>
+                        <li><i> FALCC: Efficiently performing locally fair and accurate classifications</i><br />(Nico
+                            L&auml;ssig and Melanie Herschel)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+
+                <td class="color-green" colspan="2">
+                    <b>Cassandra</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 1:</b> <i>Dataset Discovery and Exploration: State-of-the-art, Challenges and
+                        Opportunities</i><br />(Norman Paton, Zhenyu Wu)
+                </td>
+            </tr>
+            <tr>
+
+                <td class="color-orange" colspan="2">
+                    <b>Medusa</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Special Event:</b> <i>Memorial for Jorge Quian&eacute;-Ruiz</i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12" class="padding-20">
+                    <b>Lunch Break</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2:00 PM<br />-<br />3:30 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT/ICDT Keynote: </b><i>Diversity, Equity and Inclusion in Data and AI</i>
+                    <br />
+                    (H.V. Jagadish)
+                    <br />
+                    [Session Chair: Letizia Tanca]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Bar Buvette]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    4:00 PM<br />-<br />5:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 5: <b>Graphs, paths, trees and enumeration</b>
+                    <br />
+                    [Session Chair: Benny Kimelfeld]
+                    <br />
+                    <ul>
+                        <li><i>Evaluating Graph Queries using Semantic Treewidth</i><br />
+                            (Cristina Feier, Tomasz Gogacz and Filip Murlak)</li>
+                        <li><i>Containment of Regular Path Queries under Path Constraint</i><br />
+                            (Sylvain Salvati and Sophie Tison)</li>
+                        <li><i>Ranked enumeration for MSO on trees via knowledge compilation</i><br />
+                            (Antoine Amarilli, Pierre Bourhis, Florent Capelli and Mikael Monet)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 3: <b>Storage</b>
+                    <br />
+                    [Session Chair: Amr El Abbadi]
+                    <br />
+                    <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 4: <b>Data Integration (1)</b>
+                    <br />
+                    [Session Chair: Kostas Stefanidis]
+                    <br />
+                    <ul>
+                        <li><i>Computing Generic Abstractions from Application Datasets</i><br />
+                            (Nelly Barret, Ioana Manolescu and Prajna Devi Upadhyay)</li>
+                        <li>[Experiments &amp; Analysis] <i>Analysis of Open Government Datasets From a Data Design and
+                                Integration Perspective</i><br />
+                            (Arif Usta, Chang Liu and Semih Salihoglu)</li>
+                        <li><i>EMBA: Entity Matching using Multi-Task Learning of BERT with
+                                Attention-over-Attention</i><br />
+                            (Jing Zhang, Huan Sun and Joyce C Ho)</li>
+                        <li><i>Efficient Discovery of Temporal Inclusion Dependencies in Wikipedia Tables</i><br />
+                            (Leon Bornemann, Tobias Bleifu&szlig;, Dmitri V. Kalashnikov, Fatemeh Nargesian, Felix
+                            Naumann and Divesh Srivastava)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>Cassandra</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 1: </b><i>Dataset Discovery and Exploration: State-of-the-art, Challenges and
+                        Opportunities</i><br />
+                    (Norman Paton, Zhenyu Wu)
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    5:30 PM<br />-<br />7:00 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 5 (continued): <b>Graphs, paths, trees and enumeration</b>
+                    <ul>
+                        <li><i>Enumeration and updates for conjunctive linear algebra queries through
+                                expressibility</i><br />
+                            (Thomas Mu&ntilde;oz, Cristian Riveros and Stijn Vansummeren)</li>
+                    </ul>
+                    <b>ICDT Business Session: </b> <i>ICDT PC chair's report and participant feedback</i><br />
+                    [Session Chair: Graham Cormode]
+                </td>
+            </tr>
+            <tr>
+                <td class="color-dark-pink" colspan="2" id="atrium">
+                    <b>Atrium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Demonstrations</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table  display-none" id="day-3">
+        <tbody>
+            <tr class="void-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="header">
+                <td colspan="13"><b>Day 3: Thursday, March 26, 2026</b></td>
+            </tr>
+            <tr>
+                <td>
+                    8:00 AM<br />-<br />8:30 AM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Welcome Desk]</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8:30 AM<br />-<br />10:00 AM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT/ICDT Keynote: </b><i>Natural Language Data Interfaces: A Data Access Odyssey</i><br />
+                    (Georgia Koutrika)<br />
+                    [Session Chair: Letizia Tanca]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Bar Buvette]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    10:30 AM<br />-<br />12:00 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 6: <b>Algorithms for queries</b><br />
+                    [Session Chair: Cristian Riveros Jaeger]<br />
+                    <ul>
+                        <li><i>Approximating Single-Source Personalized PageRank with Absolute Error
+                                Guarantees</i><br />
+                            (Zhewei Wei, Ji-Rong Wen and Mingji Yang)</li>
+                        <li><i>Join Sampling under Acyclic Degree Constraints and (Cyclic) Subgraph Sampling</i><br />
+                            (Ru Wang and Yufei Tao)</li>
+                        <li><i>Range Entropy Queries and Partitioning</i><br />
+                            (Sanjay Krishnan and Stavros Sintos)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 5: <b>Data Integration (2)</b><br />
+                    [Session Chair: Mel Chekol]<br />
+
+                    <ul>
+                        <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
+                            (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
+                        <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
+                            (Martin Franke, Victor Christen, Peter Christen, Florens Rohde and Erhard Rahm)</li>
+                        <li>[Experiments &amp; Analysis] <i>Deep Clustering for Data Cleaning and Integration</i><br />
+                            (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
+                        <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
+                            (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 6: <b>Streams</b><br />
+                    [Session Chair: Paolo Missier]<br />
+
+                    <ul>
+                        <li>[Experiments &amp; Analysis]<i>Benchmarking Stream Join Algorithms on GPUs: A Framework and its Application to the
+                                State-of-the-art</i><br />
+                            (Dwi P. A. Nugroho, Philipp M Grulich, Steffen Zeuch, Clemens Lutz, Stefano Bortoli and
+                            Volker Markl)</li>
+                        <li><i>Deco: Fast and Accurate Decentralized Aggregation of Count-Based Windows in Large-Scale
+                                IoT Applications</i><br />
+                            (Wang Yue, Rafael Moczalla, Manisha Luthra and Tilmann Rabl)</li>
+                        <li><i>Bridging the Gap: Complex Event Processing on Stream Processing Systems</i><br />
+                            (Ariane Ziehn, Philipp M Grulich, Steffen Zeuch and Volker Markl)</li>
+                        <li>[Experiments &amp; Analysis] <i>Crayfish: Navigating the Labyrinth of Machine Learning
+                                Inference in Stream Processing Systems</i><br />
+                            (Sonia Horchidan, Po Hao Chen, Emmanouil Kritharakis, Paris Carbone and Vasiliki Kalavri)
+                        </li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>Cassandra</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 2: </b><i>Finding Relevant Information in Big Datasets with ML</i><br />
+                    (Uchechukwu Fortune Njoku, Alberto Abell&oacute;, Besim Bilalli, Gianaluca Bontempi)
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    12:00 PM<br />-<br />1:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 7: <b>Operators and operations</b><br>
+                    [Session Chair: Reinhard Pichler]<br>
+
+                    <ul>
+                        <li><i>Skyline Operators for Document Spanners</i><br>
+                            (Antoine Amarilli, Benny Kimelfeld, S&eacute;bastien Labb&eacute; and Stefan Mengel)</li>
+                        <li><i>The Importance of Parameters in Database Queries</i><br>
+                            (Martin Grohe, Benny Kimelfeld, Peter Lindner and Christoph Standke)</li>
+                        <li><i>Conditional independence on semiring relations</i><br>
+                            (Miika Hannula)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>D&amp;I Tutorial:</b> <i>Interactive tutorial on giving inaccessible, unclear and boring
+                        presentations</i><br>
+                    (Julia Stoyanovich and Benny Kimelfeld)
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT I&amp;A Session 1: <b>Enterprise data </b><br>
+                    [Session Chair: Volker Markl]<br>
+
+                    <ul>
+                        <li><i>Private and Efficient Federated Numerical Aggregation</i><br>
+                            (Graham Cormode, Harish Srinivas, Igor Markov)</li>
+                        <li><i>Pythagoras: Semantic Type Detection of Numerical Data in Enterprise Data Lakes</i><br>
+                            (Sven Langenecker, Christoph Sturm, Christian Schalles, Carsten Binnig)</li>
+                        <li><i>MyRaft: High Availability in MySQL using Raft</i><br>
+                            (Anirban Rahut, Vinaykumar Bhat, Abhinav Sharma, Yichen Shen, Bartlomiej Pelc, Chi Li,
+                            Ahsanul Haque, Yash Botadra, Xi Wang, Michael Percy, Ritwik Yadav, Yoshinori Matsunobu, Alan
+                            Liang, Igor Pozgaj, Tobias Asplund, Anatoly Karp, Luqun Lou, Pushap Goyal)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12" class="padding-20">
+                    <b>Lunch Break</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2:30 PM<br />-<br />4:00 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT/ICDT Awards Ceremony</b><br>
+                    [Session Chairs: Giuseppe Polese, Loredana Caruccio, Letizia Tanca, Qiong Luo, Graham Cormode,
+                    Reinhard Pichler]<br>
+                    <br />
+                    <b>EDBT/ICDT ToT Presentations</b>
+                    <ul>
+                        <li>[ICDT] <i>Leapfrog Triejoin: A Simple, Worst-Case Optimal Join Algorithm</i><br>
+                            (Todd L. Veldhuizen)</li>
+                        <li>[EDBT] [Online Presentation] <i>Reachability Queries in Very Large Graphs: A Fast Refined
+                                Online Search
+                                Approach</i><br>
+                            (Renê R. Veloso, Loïc Cerf, Wagner Meira Jr, and Mohammed J. Zaki)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4:00 PM<br />-<br />7:30 PM
+                </td>
+                <td colspan="12" class="padding-60">
+                    <b>Visit Paestum Archeological Area</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7:30 PM<br />-<br />11:00 PM
+                </td>
+                <td colspan="12" class="color-dark-pink padding-60">
+                    <b>Conference Dinner [NEXT - New Exposition of the eX Tobacco factory]</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table  display-none" id="day-4">
+        <tbody>
+            <tr class="void-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="header">
+                <td colspan="13"><b>Day 4: Friday, March 27, 2026</b></td>
+            </tr>
+            <tr>
+                <td>
+                    8:00 AM<br />-<br />9:00 AM
+                </td>
+                <td colspan="12">
+                    <b>Conference registration [Welcome Desk]</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9:00 AM<br />-<br />10:30 AM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT/ICDT Keynote:</b> <i>A Database Researcher Perspective on Ethical AI for Education</i><br>
+                    (Sihem Amer-Yahia)<br>
+                    [Session Chair: Qiong Luo]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Bar Buvette]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    11:00 AM<br />-<br />12:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT I&amp;A Session 2: <b>Trajectories</b><br>
+                    [Session Chair: Qiong Luo]
+                    <ul>
+                        <li><i>Exploring unsupervised anomaly detection for vehicle predictive maintenance with partial
+                                information</i><br>
+                            (Apostolos Giannoulidis, Anastasios Gounaris, Ioannis Constantinou)</li>
+                        <li><i>A Scalable System for Maritime Route and Event Forecasting</i><br>
+                            (Georgios Grigoropoulos, Ioannis Spiliopoulos, Ilias Chamatidis, Manolis Kaliorakis,
+                            Alexandros Troupiotis-Kapeliaris, Marios Vodas, Evangelia Filippou, Eva Chondrodima, Nikos
+                            Pelekis, Yannis Theodoridis, Dimitrios Zissis, Konstantina Bereta)</i></li>
+                        <li><i>Patterns of Life : Global Inventory for maritime mobility patterns<br>
+                                (Ioannis Spiliopoulos, Konstantina Bereta, Marios Vodas, Georgios Grigoropoulos,
+                                Dimitrios
+                                Zissis)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 7: <b>Graphs (1)</b><br>
+                    [Session Chair: Elena Baralis]
+
+                    <ul>
+                        <li>[Experiments &amp; Analysis]<i> Evaluation of Sampling Methods for Discovering Facts from
+                                Knowledge Graph Embeddings</i><br>
+                            (Rama Widyadhana Bhagaskoro, Volker Markl and Zoi Kaoudi)</li>
+                        <li><i>Interactive Graph Repairs for Neighborhood Constraints</i><br>
+                            (Paul Juillard, Angela Bonifati and Andrea Mauri)</li>
+                        <li><i>Size-bounded Community Search over Large Bipartite Graphs</i><br>
+                            (Yuting Zhang, Kai Wang, Wenjie Zhang, Wei Ni and Xuemin Lin)</li>
+                        <li><i>DSPC: Efficiently Answering Shortest Path Counting on Dynamic Graphs</i><br>
+                            (Qingshuai Feng, You Peng, Wenjie Zhang, Xuemin Lin and Ying Zhang)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 8: <b>Privacy and Security</b><br>
+                    [Session Chair: Nikos Mamoulis]
+
+                    <ul>
+                        <li><i>A new PET for Data Collection via Forms with Data Minimization, Full Accuracy and
+                                Informed Consent</i><br>
+                            (Nicolas Anciaux, Sabine Frittella, Baptiste Joffroy, Benjamin Nguyen and Guillaume Scerri)
+                        </li>
+                        <li>[Vision Paper]<i> Data-CASE: Grounding Data Regulations for Compliant Data Processing
+                                Systems</i><br>
+                            (Vishal Chakraborty, Stacy Ann-Elvy, Sharad Mehrotra, Faisal Nawab, Mohammad Sadoghi,
+                            Shantanu Sharma
+                            Nalini Venkatasubramanian and Farhan Saeed)</li>
+                        <li><i>Fine-Grained Geo-Obfuscation to Protect Workers' Location Privacy in Time-Sensitive
+                                Spatial Crowdsourcing</i><br>
+                            (Chenxi Qiu, Sourabh Yadav, Yuede Ji, Anna Cinzia Squicciarini, Ram Dantu, Juanjuan Zhao
+                            and Cheng-Zhong Xu)
+                        <li><i>ORTOA: A One Round Trip Protocol For Operation-Type Obliviousness</i><br>
+                            (Sujaya Maiyya, Yuval Steinhart, Adrian Davila, Jason Du, Divy Agrawal, Prabhanjan Ananth
+                            and Amr El Abbadi)</li>
+                        <li><i>SAGED: Few-Shot Meta Learning for Tabular Data Error Detection</i><br>
+                            (Mohamed Abdelaal, Tim Ktitarev, Daniel St&auml;dtler and Harald Sch&ouml;ning)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>Cassandra</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 3: </b><i>A Differentially Private Guide for Graph Analytics</i><br>
+                    (Felipe Timb&oacute;, Felipe Brito, Andre Mendonca and Javam Machado)
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12" class="padding-20">
+                    <b>Lunch Break</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    2:00 PM<br />-<br />3:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 9: <b>Graphs (2)</b><br>
+                    [Session Chair: Yuchen Li]
+
+                    <ul>
+                        <li>[S] <i>CSR+: A Scalable Efficient CoSimRank Search Algorithm with Multi-Source Queries on
+                                Massive Graphs</i><br>
+                            (Maoyin Zhang and Weiren Yu)</li>
+                        <li><i>Seraph: Continuous Queries on Property Graph Streams</i><br>
+                            (Christopher Rost, Riccardo Tommasini, Angela Bonifati, Emanuele Della Valle, Erhard Rahm,
+                            Keith Hare, Stefan Plantikow,
+                            Petra Selmer and Hannes Voigt)</li>
+                        <li>[S] <i>GSim+: Efficient Retrieval of Node-to-Node Similarity Across Two Graphs at Billion
+                                Scale</i><br>
+                            (Ruby Zhang and Weiren Yu)</li>
+                        <li><i>Aion: Efficient Temporal Graph Data Management</i><br>
+                            (Georgios Theodorakis, James Clarkson and Jim Webber)</li>
+                        <li><i>Relational Data Imputation with Graph Neural Networks</i><br>
+                            (Riccardo Cappuzzo, Saravanan Thirumuruganathan and Paolo Papotti)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 10: <b>ML and DB (1)</b><br>
+                    [Session Chair: Stefano Cirillo]
+
+                    <ul>
+                        <li>[Vision Paper]<i> Querying Large Language Models with SQL</i><br>
+                            (Mohammed Saeed, Nicola De Cao and Paolo Papotti)</li>
+                        <li><i>Learning over Sets for Databases</i><br>
+                            (Angjela Davitkova, Damjan Gjurovski and Sebastian Michel)</li>
+                        <li>[S] <i>ActiveDP: Bridging Active Learning and Data Programming</i><br>
+                            (Naiqing Guan and Nick Koudas)</li>
+                        <li>[Vision Paper] <i>Serving Deep Learning Models in Relational Databases</i><br>
+                            (Alexandre E Eichenberger, Qi Lin, Saif Masood, Hong Min, Alex Sim, Yida Wang, Kesheng Wu,
+                            Binhang Yuan, Lixi Zhou and Jia Zou)</li>
+                        <li><i>Loss Compensation in Multi-Session Recommendation Under Limited Availability</i><br>
+                            (Davide Azzalini, Fabio Azzalini, Chiara Criscuolo, Tommaso Dolci, Davide Martinenghi,
+                            Sihem Amer-Yahia)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 11: <b>Spatial Data</b><br>
+                    [Session Chair: Felix Naumann]
+
+                    <ul>
+                        <li><i>In-Network Approximate and Efficient Spatiotemporal Range Queries on Moving
+                                Objects</i><br>
+                            (Guang Yang, Abhirup Ghosh, Liang Liang and Thomas Heinis)</li>
+                        <li><i>Efficient Semantic Similarity Search over Spatio-textual Data</i><br>
+                            (George Theodoropoulos, Kjetil N&oslash;rv&aring; and Christos Doulkeridis)</li>
+                        <li><i>Spatial-temporal Forecasting for Regions without Observations</i><br>
+                            (Xinyu Su, Jianzhong Qi, Egemen Tanin, Yanchuan Chang and Majid Sarvi)</li>
+                        <li>[S] <i>Similarity Search based on Geo-footprints</i><br>
+                            (Achilleas Michalopoulos, Konstantinos Lampropoulos, George Kelantonakis, Chrysostomos
+                            Zeginis,
+                            Kostas Magoutis and Nikos Mamoulis)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>Cassandra</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>D&amp;I Activity:</b> <i>Unfinished Comics for Inclusive Communication about Data Management in
+                        Research and Practice</i><br>
+                    (Falaah Arif Khan, Awais Hameed Khan, Julia Stoyanovich and Benny Kimelfeld)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Bar Buvette]</b>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    4:00 PM<br />-<br />5:30 PM
+                </td>
+                <td class="color-beige" colspan="2">
+                    <b>Mercurio</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 12:<b> Query Processing</b><br>
+                    [Session Chair: Anton Dignos]
+
+                    <ul>
+                        <li><i>Querying For Actions Over Videos</i><br>
+                            (Daren Chao and Nick Koudas)</li>
+                        <li><i>QPSeeker: An Efficient Neural Planner combining both data and queries through Variational
+                                Inference</i><br>
+                            (Christos Tsapelas and Georgia Koutrika)</li>
+                        <li>[S] <i>HINT on Steroids: Batch Query Processing for Interval Data</i><br>
+                            (Panagiotis Bouros, Artur Titkov, George Christodoulou, Christian Rauch and Nikos Mamoulis)
+                        </li>
+                        <li><i>WaZI: A Learned and Workload-aware Z-Index</i><br>
+                            (Sachith G Pai, Michael Mathioudakis and Yanhao Wang)</li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-blue" colspan="2">
+                    <b>Saturno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 13: <b>ML and DB (2)</b><br>
+                    [Session Chair: Bernardo Breve]
+
+                    <ul>
+                        <li>[Experiments &amp; Analysis] <i>Auto-FP: An Experimental Study of Automated Feature
+                                Preprocessing for Tabular Data</i><br>
+                            (Danrui Qi, Jinglin Peng, Yongjun He and Jiannan Wang)</li>
+                        <li>[Experiments &amp; Analysis] <i>Predicting Fact Contributions from Query Logs with Machine
+                                Learning</i><br>
+                            (Dana Arad, Daniel Deutch and Nave Frost)</li>
+                        <li><i>Shapley Values for Explanation in Two-sided Matching Applications</i><br>
+                            (Suraj Shetiya, Ian Swift, Abolfazl Asudeh and Gautam Das)</li>
+                        <li><i>Optimizing Counterfactual-based Analysis of Machine Learning Models Through
+                                Databases</i><br>
+                            (Aviv Ben Arie, Daniel Deutch, Nave Frost, Yair Horesh and Idan Meyuhas)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="color-pink" colspan="2">
+                    <b>Nettuno</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 14: <b>Data Mining</b><br>
+                    [Session Chair: Luca Cagliero]
+
+                    <ul>
+                        <li><i>Community Similarity based on User Profile Joins</i><br>
+                            (Konstantinos Theocharidis and Hady Lauw)</li>
+                        <li>[Vision Paper] <i>The Missing Link? On the In-Between Instance Detection Task</i><br>
+                            (Daniyal Kazempour, Claudius Zelenka and Peer Kr&ouml;ger)</li>
+                        <li>[Experiments &amp; Analysis] <i>A Framework to Evaluate Early Time-Series Classification
+                                Algorithms</i><br>
+                            (Charilaos I Akasiadis, Evgenios Kladis, Petro-Foti Kamberi, Evangelos Michelioudakis,
+                            Elias Alevizos and Alexander Artikis)</li>
+                        <li>[S] <i>Frequent Component Analysis for Large Time Series Databases with Gaussian
+                                Processes</i><br>
+                            (Jan H&uuml;wel and Christian Beecks)</li>
+                        <li><i>Similarity Measures For Incomplete Database Instances</i><br>
+                            (Boris Glavic, Giansalvatore Mecca, Ren&eacute;e J. Miller, Paolo Papotti, Donatello
+                            Santoro and Enzo Veltri)</li>
+                    </ul>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+<div style="position: absolute; bottom: 0px; left: 0px; height: 0px; z-index: 5;"><template shadowrootmode="open">
+        <div id="plasmo-mount-container" style="display: flex; position: relative; top: 0px; left: 0px;"></div>
+    </template></div>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
+        <style>
+            div.grammarly-desktop-integration {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            div.grammarly-desktop-integration:before {
+                content: attr(data-content);
+            }
+        </style>
+        <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
+            data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}">
+        </div>
+    </template></grammarly-desktop-integration>
+
+<script>
+
+    $("div.tab_head").click(function (ev) {
+        var toShowIdRef = $(ev.currentTarget).attr("id-ref");
+        var currentIdRef = $("div.tab_head_selected").attr("id-ref");
+        $("table.main-table[id='" + currentIdRef + "']").addClass("display-none");
+        $("div.tab_head.tab_head_selected").removeClass("tab_head_selected");
+
+        $("table.main-table[id='" + toShowIdRef + "']").removeClass("display-none");
+        $(ev.currentTarget).addClass("tab_head_selected");
+    });
+
+    $(document).ready(function () {
+        $("td[class*='color-']").each(function (i, el) {
+            $(el).attr("id", "" + i);
+        });
+        const searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has("show")) {
+            var idToSHow = searchParams.get("show");
+            var elToShow = $("#" + idToSHow);
+            if (elToShow) {
+                if (elToShow.hasClass("tab_head")) {
+                    elToShow.click();
+                }
+                else {
+                    var tabToShow = elToShow.parents("table").attr("id");
+                    $("div.tab_head[id-ref='" + tabToShow + "']").click();
+                    $('html, body').animate({
+                        scrollTop: elToShow.offset().top
+                    }, 1000);
+                }
+            }
+        }
+    });
+
+</script>
+
+</html>
