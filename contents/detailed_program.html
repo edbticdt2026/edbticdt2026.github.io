@@ -84,10 +84,10 @@
     <!-- <div class="tab_head tab_head_selected" id-ref="day-0" id="tabd0">
         <b>Go to Day 0</b>
     </div> -->
-    <div class="tab_head tab_head_selected" id-ref="day-1" id="tabd1">
+    <div class="tab_head" id-ref="day-1" id="tabd1">
         <b>Go to Day 1</b>
     </div>
-    <div class="tab_head" id-ref="day-2" id="tabd2">
+    <div class="tab_head tab_head_selected" id-ref="day-2" id="tabd2">
         <b>Go to Day 2</b>
     </div>
     <div class="tab_head" id-ref="day-3" id="tabd3">
@@ -146,7 +146,7 @@
             </tr>
         </tbody>
     </table> -->
-    <table class="main-table" id="day-1">
+    <table class="main-table display-none" id="day-1">
         <tbody>
             <tr class="void-row">
                 <td></td>
@@ -178,10 +178,14 @@
                 <td>
                     8:40 AM<br />-<br />9:00 AM
                 </td>
-                <td class="color-pink" colspan="12">
-                    <b>ICDT Opening [A1 Auditorium]</b>
+                <td class="color-orange" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="12" class="left-align">
+                    <b>ICDT Opening</b>
                 </td>
             </tr>
+
             <tr>
                 <td rowspan="4">
                     9:00 AM<br />-<br />10:00 AM
@@ -339,13 +343,39 @@
 
 
             <tr>
-                <td>
-
+                <td rowspan="2">
+                    10:30 AM<br />-<br />11:00 AM
                 </td>
                 <td colspan="12">
                     <b>Coffee Break [Main Auditorium Foyer]</b>
                 </td>
             </tr>
+            <tr>
+                <td class="color-dark-pink" colspan="2">
+                    <b>A3 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DataEd: </b> 5th International Workshop on Data Systems Education
+                    <br />
+                    <!-- <ul>
+                        <li>[Online Presentation] <i>A JSON Document Algebra for Query Optimization</i><br />
+                            (Tomas Felipe LLano-Rios, Mohamed Khalefa, Antonio Badia)</li>
+                        <li>[S] <i>Context Based Completeness Assessment for Data Warehouse Hierarchies</i><br />
+                            (Camila Sanz, Adriana Marotta)</li>
+                        <li>[S] <i>An Efficient Diversity-Aware Method for the Empty-Answer Problem </i><br />
+                            (Yuto Ikeda, Chuan Xiao, Makoto Onizuka)</li>
+                        <li><i>HealthMesh: An Architectural Framework for Federated Healthcare Data Management</i><br />
+                            (Aniol Bisquert Parés, Achraf Hmimou, Josep L Berral, Alberto Gutierrez-Torre, Oscar Romer)
+                        </li>
+                        <li><i>Towards a Process-Driven Design of Data Platforms</i><br />
+                            (Matteo Francia, Matteo Golfarelli, Manuele Pasini)</li>
+                        <li>[S] <i>Discovery of Semantic Non-Syntactic Joins</i><br />
+                            (Marc Maynou, Sergi Nadal)</li>
+                    </ul> -->
+                </td>
+            </tr>
+
+
             <tr>
                 <td rowspan="7">
                     11:00 AM<br />-<br />12:30 PM
@@ -1020,7 +1050,13 @@
     </table>
 
 
-    <table class="main-table  display-none" id="day-2">
+
+
+
+
+
+
+    <table class="main-table" id="day-2">
         <tbody>
             <tr class="void-row">
                 <td></td>
@@ -1042,71 +1078,95 @@
             </tr>
             <tr>
                 <td>
-                    8:00 AM<br />-<br />9:00 AM
+                    8:00 AM<br />-<br />8:40 AM
                 </td>
-                <td colspan="12">
-                    <b>Conference registration [Welcome Desk]</b>
+                <td class="color-pink" colspan="12">
+                    <b>Conference registration [Main Building Entrance]</b>
                 </td>
             </tr>
             <tr>
                 <td>
-                    9:00 AM<br />-<br />10:30 AM
+                    8:40 AM<br />-<br />9:00 AM
                 </td>
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                <td class="color-orange" colspan="2">
+                    <b>Main Auditorium</b>
                 </td>
-                <td class="left-align" colspan="10">
+                <td colspan="12" class="left-align">
                     <b>EDBT Opening</b>
-                    <br />
-                    [Session Chairs: Letizia Tanca, Qiong Luo, Giuseppe Polese, Loredana Caruccio]
-                    <br />
-                    <br />
-                    <b>EDBT/ICDT Keynote:</b> <i>Adaptive database systems: Navigating chaos in a Heterogeneous
-                        Landscape</i>
-                    <br />
-                    (Anastasia Ailamaki)
-                    <br />
-                    [Session Chair: Qiong Luo]
                 </td>
             </tr>
+
+
+            <tr>
+                <td>
+                    9:00 AM<br />-<br />10:00 AM
+                </td>
+                <td class="color-orange" colspan="2">
+                    <b>Main Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b> EDBT/ICDT Keynote: </b><i>Enough with the Glue Code! Let’s Build Snap‑Fit Data System Architectures</i>
+                    <br />
+                    (Holger Pirk)
+                    <br />
+                    <!-- [Session Chair: Graham Cormode] -->
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    10:00 AM<br />-<br />10:30 AM
+                </td>
+                <td class="color-orange" colspan="2">
+                    <b>Main Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>EDBT Test of Time Award</b>
+                    <!-- [Session Chair: Graham Cormode] -->
+                </td>
+            </tr>
+
             <tr>
                 <td>
                 </td>
                 <td colspan="12">
-                    <b>Coffee Break [Bar Buvette]</b>
+                    <b>Coffee Break [Main Auditorium Foyer]</b>
                 </td>
             </tr>
             <tr>
-                <td rowspan="5">
+                <td rowspan="6">
                     11:00 AM<br />-<br />12:30 PM
                 </td>
-                <td class="color-beige" colspan="2">
-                    <b>Mercurio</b>
+                <td>
+                    11:00 AM<br />-<br />12:00 PM
+                </td>
+                <td class="color-blue" colspan="1">
+                    <b>D11 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    ICDT Session 4: <b>Structural approaches</b>
+                    ICDT Session 3: <!--<b>Structural approaches</b>-->
                     <br />
-                    [Session Chair: Sudeepa Roy]
-                    <br />
-                    <ul>
+                    <!-- [Session Chair: Sudeepa Roy] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
                         <li><i>On the Convergence Rate of Linear Datalogo over Stable Semirings</i><br />(Sungjin Im,
                             Benjamin Moseley, Hung Ngo and Kirk Pruhs)</li>
                         <li><i>Right-Adjoints for Datalog Programs</i><br />(Balder ten Cate, Victor Dalmau and Jakub
                             Oprsal)</li>
                         <li><i>When do homomorphism counts help in query algorithms?</i><br />(Balder ten Cate, Victor
                             Dalmau, Phokion Kolaitis and Wei-Lin Wu)</li>
-                    </ul>
+                    </ul> -->
 
                 </td>
             </tr>
-            <tr>
+            <tr>               
 
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 1: <b>Performance and Scalability</b>
-                    <br />
+                    EDBT Session 1: <!--<b>Performance and Scalability</b>-->
+                    <!-- <br />
                     [Session Chair: Qiong Luo]
                     <br />
                     <ul>
@@ -1123,19 +1183,20 @@
                         <li>[Online Presentation] <i>Optimizing Goodput through Sharing for Batch Analytics with
                                 Deadlines</i><br />(Srinivas Karthik Venkatesh, Panagiotis Sioulas, Ahana Pradhan,
                             Raghunandan Subramanya, Ioannis Mytilinis and Anastasia Ailamaki)</li>
-                    </ul>
+                    </ul> -->
 
                 </td>
             </tr>
             <tr>
 
-                <td class="color-pink" colspan="2">
-                    <b>Nettuno</b>
+                <td class="color-yellow" colspan="2">
+                    <b>D10b Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 2: <b>Data Ethics</b>
+                    EDBT Session 2: 
+                    <!-- <b>Data Ethics</b> -->
                     <br />
-                    [Session Chair: Donatella Firmani]
+                    <!-- [Session Chair: Donatella Firmani]
                     <br />
                     <ul>
                         <li><i>Balancing Utility and Fairness in Submodular Maximization</i><br />(Yanhao Wang, Yuchen
@@ -1146,90 +1207,136 @@
                             Gabriel Ghinita and Cyrus Shahabi)</li>
                         <li><i> FALCC: Efficiently performing locally fair and accurate classifications</i><br />(Nico
                             L&auml;ssig and Melanie Herschel)</li>
-                    </ul>
+                    </ul> -->
                 </td>
             </tr>
             <tr>
 
-                <td class="color-green" colspan="2">
-                    <b>Cassandra</b>
+                <td class="color-gray" colspan="2">
+                    <b>A2a Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>Tutorial 1:</b> <i>Dataset Discovery and Exploration: State-of-the-art, Challenges and
-                        Opportunities</i><br />(Norman Paton, Zhenyu Wu)
+                    <b>Tutorial 1:</b> <i>Private LLM Inference with Homomorphic Encryption</i><br />(Lawrence Lim, Divyakant Agrawal, Amr El Abbadi)
                 </td>
             </tr>
             <tr>
 
-                <td class="color-orange" colspan="2">
-                    <b>Medusa</b>
+                <td class="color-beige" colspan="2">
+                    <b>Café & Aula Toivo</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>Special Event:</b> <i>Memorial for Jorge Quian&eacute;-Ruiz</i>
+                    <b>EDBT Demo Session 1</b>
+                    <br/>
+                    <ul>
+                        <li><i>TerseTS: A Framework for Time Series Compression</i><br />(Carlos Muniz Cuza, Søren Kejser Jensen, Tom Louis Klein, Sabina Bakhtiiarova, Matthias Boehm and Torben Bach Pedersen)</li>
+                        <li><i>Where Graphs Meet Fuzzy Logic — A DBMS-Centered Engine for Polyphonic Music Matching in Score Databases</i><br />(Adel Aly, Olivier Pivert and Virginie Thion)</li>
+                        <li><i>DEDALUS: A Quantum-Enhanced End-to-End Framework for Cost-Aware Join Order Optimization with Search Space Pruning</i><br/> 
+                        (Emmanouil Limnaios, Markos Stergiopoulos, George Stamatiou, Efthymios Papageorgiou, Vasilis Efthymiou, Dimitrios  Loupas, Dimitrios Tsourounis, Kostas Blekos, Dimitris Plexousakis, Aggelos Tsikas, Kostas Magoutis, Yannis  Tzitzikas and Haridimos Kondylakis)</li>
+                        <li><i>CoDeC: Constraints-Guided Diverse Counterfactuals</i><br/> 
+                        (Avia Asael, Nave Frost, Amir Gilad and Daniel Deutch)</li>
+                        <li><i>MetricLib: A Modular and Extensible Toolkit for Evaluation of Medical ML Datasets</i><br/> 
+                        (Martin Seyferth, Katinka Becker, Tobias Schäffter, Daniel Schwabe and Matthias Böhm)</li>
+                        <li><i>Practical Spreadsheet Parsing with SheetReader</i><br/> 
+                        (Haralampos Gavriilidis, Felix Henze, Joel Ziegler, Jonas Benn, Eleni Tzirita Zacharatou and Volker Markl)</li>
+                        <li><i>PolyPipe: Merging Data Pipelines and Multi-Model Databases</i><br/> 
+                        (David Lengweiler, Tobias Weber, Heiko Schuldt and Marco Vogt)</li>
+                        <li><i>MM-mapsearch: Workload-Aware Mapping Selection</i><br/> 
+                        (Pavel Koupil, Bedřich Mazourek, Jáchym Bártík and Irena Holubová)</li>
+                        <li><i>NavLLM: Interactive LLM-Assisted Navigation over Multidimensional Data Cubes</i><br/> 
+                        (Xiufeng Liu, Ruyu Liu and Yanyan Yang)</li>
+                    </ul>   
                 </td>
             </tr>
-            <tr>
-                <td>
 
+            <tr>
+                <td rowspan="2">
+                    12:00 PM<br />-<br />1:00 PM
                 </td>
-                <td colspan="12" class="padding-20">
+                <td class="color-blue" rowspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td class="left-align" colspan="1" rowspan="2">
+                    ICDT Business Meeting
+                    <br/>
+                </td>
+                <td colspan="9" height="50px">
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">12:30 PM<br />-<br />2:00 PM</td>
+                <!-- <td>
+                    12:30 PM<br />-<br />1:00 PM
+                </td> -->
+                <td colspan="9" rowspan="2">
                     <b>Lunch Break</b>
                 </td>
-            </tr>
+            </tr>      
+            <tr height="50px">
+                <!-- <td colspan="8" class="padding-20">
+                    <b>Lunch Break</b>
+                </td> -->
+            </tr>     
+
+
             <tr>
                 <td>
-                    2:00 PM<br />-<br />3:30 PM
+                    2:00 PM<br />-<br />3:00 PM
                 </td>
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>EDBT/ICDT Keynote: </b><i>Diversity, Equity and Inclusion in Data and AI</i>
+                    <b>EDBT/ICDT Keynote: </b><i>The Dissection of a Complex Event Recognition Engine</i>
                     <br />
-                    (H.V. Jagadish)
+                    (Cristian Riveros)
                     <br />
-                    [Session Chair: Letizia Tanca]
+                    <!-- [Session Chair: Letizia Tanca] -->
                 </td>
             </tr>
             <tr>
                 <td>
                 </td>
                 <td colspan="12">
-                    <b>Coffee Break [Bar Buvette]</b>
+                    <b>Break</b>
                 </td>
             </tr>
+
+
             <tr>
-                <td rowspan="4">
-                    4:00 PM<br />-<br />5:30 PM
+                <td rowspan="6">
+                    3:15 PM<br />-<br />4:15 PM
                 </td>
-                <td class="color-beige" colspan="2">
-                    <b>Mercurio</b>
+                <td class="color-blue" colspan="2">
+                    <b>D11 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    ICDT Session 5: <b>Graphs, paths, trees and enumeration</b>
-                    <br />
-                    [Session Chair: Benny Kimelfeld]
-                    <br />
-                    <ul>
+                    ICDT Session 4: 
+                    <!-- <b>Graphs, paths, trees and enumeration</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Benny Kimelfeld] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
                         <li><i>Evaluating Graph Queries using Semantic Treewidth</i><br />
                             (Cristina Feier, Tomasz Gogacz and Filip Murlak)</li>
                         <li><i>Containment of Regular Path Queries under Path Constraint</i><br />
                             (Sylvain Salvati and Sophie Tison)</li>
                         <li><i>Ranked enumeration for MSO on trees via knowledge compilation</i><br />
                             (Antoine Amarilli, Pierre Bourhis, Florent Capelli and Mikael Monet)</li>
-                    </ul>
+                    </ul> -->
                 </td>
             </tr>
             <tr>
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 3: <b>Storage</b>
-                    <br />
-                    [Session Chair: Amr El Abbadi]
-                    <br />
-                    <ul>
+                    EDBT Session 3: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
                         <li>[S]<i> Adaptive Compression For Databases</i><br />
                             (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
                         <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
@@ -1240,70 +1347,211 @@
                             Torben Bach Pedersen)</li>
                         <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
                             (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
-                    </ul>
+                    </ul> -->
 
                 </td>
             </tr>
             <tr>
-                <td class="color-pink" colspan="2">
-                    <b>Nettuno</b>
+                <td class="color-yello" colspan="2">
+                    <b>A3 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 4: <b>Data Integration (1)</b>
-                    <br />
-                    [Session Chair: Kostas Stefanidis]
-                    <br />
+                    EDBT Session 4: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul> -->
+
+                </td>
+            </tr>
+            <tr>
+                <td class="color-teal" colspan="2">
+                    <b>A4 Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 5: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul> -->
+
+                </td>
+            </tr>
+                <td class="color-green" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 2: </b><i>Privacy-preserving Record Linkage: Past, Present and Yet-to-Come</i><br />
+                    (Lefteris Stetsikas, George Papadakis, Manolis Koubarakis, Dimitrios Karapiperis)
+                </td>
+            </tr>
+            </tr>
+                <td class="color-coral" colspan="2">
+                    <b>D10b Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Young Researchers Symposium I - Invited Talks:</b>
                     <ul>
-                        <li><i>Computing Generic Abstractions from Application Datasets</i><br />
-                            (Nelly Barret, Ioana Manolescu and Prajna Devi Upadhyay)</li>
-                        <li>[Experiments &amp; Analysis] <i>Analysis of Open Government Datasets From a Data Design and
-                                Integration Perspective</i><br />
-                            (Arif Usta, Chang Liu and Semih Salihoglu)</li>
-                        <li><i>EMBA: Entity Matching using Multi-Task Learning of BERT with
-                                Attention-over-Attention</i><br />
-                            (Jing Zhang, Huan Sun and Joyce C Ho)</li>
-                        <li><i>Efficient Discovery of Temporal Inclusion Dependencies in Wikipedia Tables</i><br />
-                            (Leon Bornemann, Tobias Bleifu&szlig;, Dmitri V. Kalashnikov, Fatemeh Nargesian, Felix
-                            Naumann and Divesh Srivastava)</li>
-                    </ul>
+                        <li><i> Data Processing in Space</i><br />
+                            (Pınar Tözün)</li>
+                        <li><i>An industry perspective on modern data management challenges</i><br/>
+                            (Alexander Böhm)</li>
+                    </ul>                                        
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Main Auditorium Foyer]</b>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="6">
+                    4:45 PM<br />-<br />5:45 PM
+                </td>
+                <td class="color-blue" colspan="2">
+                    <b>D11 Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    ICDT Session 5: 
+                    <!-- <b>Graphs, paths, trees and enumeration</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Benny Kimelfeld] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li><i>Evaluating Graph Queries using Semantic Treewidth</i><br />
+                            (Cristina Feier, Tomasz Gogacz and Filip Murlak)</li>
+                        <li><i>Containment of Regular Path Queries under Path Constraint</i><br />
+                            (Sylvain Salvati and Sophie Tison)</li>
+                        <li><i>Ranked enumeration for MSO on trees via knowledge compilation</i><br />
+                            (Antoine Amarilli, Pierre Bourhis, Florent Capelli and Mikael Monet)</li>
+                    </ul> -->
                 </td>
             </tr>
             <tr>
                 <td class="color-green" colspan="2">
-                    <b>Cassandra</b>
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>Tutorial 1: </b><i>Dataset Discovery and Exploration: State-of-the-art, Challenges and
-                        Opportunities</i><br />
-                    (Norman Paton, Zhenyu Wu)
+                    EDBT Session 6: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul> -->
+
                 </td>
             </tr>
             <tr>
-                <td rowspan="2">
-                    5:30 PM<br />-<br />7:00 PM
-                </td>
-                <td class="color-beige" colspan="2">
-                    <b>Mercurio</b>
+                <td class="color-yello" colspan="2">
+                    <b>A3 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    ICDT Session 5 (continued): <b>Graphs, paths, trees and enumeration</b>
-                    <ul>
-                        <li><i>Enumeration and updates for conjunctive linear algebra queries through
-                                expressibility</i><br />
-                            (Thomas Mu&ntilde;oz, Cristian Riveros and Stijn Vansummeren)</li>
-                    </ul>
-                    <b>ICDT Business Session: </b> <i>ICDT PC chair's report and participant feedback</i><br />
-                    [Session Chair: Graham Cormode]
+                    EDBT Session 7: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul> -->
+
                 </td>
             </tr>
             <tr>
-                <td class="color-dark-pink" colspan="2" id="atrium">
-                    <b>Atrium</b>
+                <td class="color-teal" colspan="2">
+                    <b>A4 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>Demonstrations</b>
+                    EDBT Session 8: 
+                    <!-- <b>Storage</b> -->
+                    <!-- <br /> -->
+                    <!-- [Session Chair: Amr El Abbadi] -->
+                    <!-- <br /> -->
+                    <!-- <ul>
+                        <li>[S]<i> Adaptive Compression For Databases</i><br />
+                            (Leon Windheuser, Christoph Anneser, Huanchen Zhang, Thomas Neumann and Alfons Kemper)</li>
+                        <li><i>MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory</i><br />
+                            (Hongjia Zou, Lidan Shou, Ke Chen and Xuan Zhou)</li>
+                        <li>[Experiments &amp; Analysis]<i> Evaluating the Impact of Error-Bounded Lossy Compression on
+                                Time Series Forecasting</i><br />
+                            (Carlos Enrique Muniz Cuza, S&oslash;ren Kejser Jensen, Jonas Brusokas, Nguyen Ho and
+                            Torben Bach Pedersen)</li>
+                        <li><i>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures</i><br />
+                            (Yunhong Ji, Wentao Huang, Xuan Zhou, Bingsheng He and Kian-Lee Tan)</li>
+                    </ul> -->
+
                 </td>
             </tr>
+                <td class="color-green" colspan="2">
+                    <b>A2a Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Tutorial 2 (cont): </b><i>Privacy-preserving Record Linkage: Past, Present and Yet-to-Come</i><br />
+                    (Lefteris Stetsikas, George Papadakis, Manolis Koubarakis, Dimitrios Karapiperis)
+                </td>
+            </tr>
+            </tr>
+                <td class="color-coral" colspan="2">
+                    <b>D10b Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Young Researchers Symposium II - PhD Lightning Talks</b><br />
+                </td>
+            </tr>
+
+            
         </tbody>
     </table>
 
