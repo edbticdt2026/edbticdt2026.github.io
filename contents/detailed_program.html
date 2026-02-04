@@ -57,10 +57,10 @@
     <div class="tab_head" id-ref="day-1" id="tabd1">
         <b>Go to Day 1</b>
     </div>
-    <div class="tab_head tab_head_selected" id-ref="day-2" id="tabd2">
+    <div class="tab_head" id-ref="day-2" id="tabd2">
         <b>Go to Day 2</b>
     </div>
-    <div class="tab_head" id-ref="day-3" id="tabd3">
+    <div class="tab_head tab_head_selected" id-ref="day-3" id="tabd3">
         <b>Go to Day 3</b>
     </div>
     <div class="tab_head" id-ref="day-4" id="tabd4">
@@ -1026,7 +1026,7 @@
 
 
 
-    <table class="main-table" id="day-2">
+    <table class="main-table display-none" id="day-2">
         <tbody>
             <tr class="void-row">
                 <td></td>
@@ -1181,7 +1181,6 @@
                 </td>
             </tr>
             <tr>
-
                 <td class="color-gray" colspan="2">
                     <b>A2a Auditorium</b>
                 </td>
@@ -1190,7 +1189,6 @@
                 </td>
             </tr>
             <tr>
-
                 <td class="color-beige" colspan="2">
                     <b>Café & Aula Toivo</b>
                 </td>
@@ -1525,7 +1523,7 @@
         </tbody>
     </table>
 
-    <table class="main-table  display-none" id="day-3">
+    <table class="main-table" id="day-3">
         <tbody>
             <tr class="void-row">
                 <td></td>
@@ -1547,43 +1545,51 @@
             </tr>
             <tr>
                 <td>
-                    8:00 AM<br />-<br />8:30 AM
+                    9:00 AM<br />-<br />10:00 AM
                 </td>
-                <td colspan="12">
-                    <b>Conference registration [Welcome Desk]</b>
+                <td class="color-orange" colspan="2">
+                    <b>Main Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>EDBT/ICDT Keynote: </b><i>Beauty & the Beast: Deep Learning & Its Resource Needs</i>
+                    <br />
+                    (Pınar Tözün)
+                    <br />
+                    <!-- [Session Chair: Graham Cormode] -->
                 </td>
             </tr>
             <tr>
                 <td>
-                    8:30 AM<br />-<br />10:00 AM
+                    10:00 AM<br />-<br />11:00 AM
+                </td>
+                <td class="color-orange" colspan="2">
+                    <b>Main Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>EDBT & ICDT Best Paper Awards</b><br/>
+                    <!-- [Session Chair: Letizia Tanca] -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Coffee Break [Main Auditorium Foyer]</b>
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="5">
+                    11:00 AM<br />-<br />12:30 PM
                 </td>
                 <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                    <b>D11 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>EDBT/ICDT Keynote: </b><i>Natural Language Data Interfaces: A Data Access Odyssey</i><br />
-                    (Georgia Koutrika)<br />
-                    [Session Chair: Letizia Tanca]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="12">
-                    <b>Coffee Break [Bar Buvette]</b>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="4">
-                    10:30 AM<br />-<br />12:00 PM
-                </td>
-                <td class="color-beige" colspan="2">
-                    <b>Mercurio</b>
-                </td>
-                <td class="left-align" colspan="10">
-                    ICDT Session 6: <b>Algorithms for queries</b><br />
-                    [Session Chair: Cristian Riveros Jaeger]<br />
-                    <ul>
+                    ICDT Session 6: 
+                    <!-- <b>Algorithms for queries</b><br /> -->
+                    <!-- [Session Chair: Cristian Riveros Jaeger]<br /> -->
+                    <!-- <ul>
                         <li><i>Approximating Single-Source Personalized PageRank with Absolute Error
                                 Guarantees</i><br />
                             (Zhewei Wei, Ji-Rong Wen and Mingji Yang)</li>
@@ -1591,18 +1597,19 @@
                             (Ru Wang and Yufei Tao)</li>
                         <li><i>Range Entropy Queries and Partitioning</i><br />
                             (Sanjay Krishnan and Stavros Sintos)</li>
-                    </ul>
+                    </ul> -->
                 </td>
             </tr>
             <tr>
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 5: <b>Data Integration (2)</b><br />
-                    [Session Chair: Mel Chekol]<br />
+                    EDBT Session 9: 
+                    <!-- <b>Data Integration (2)</b><br /> -->
+                    <!-- [Session Chair: Mel Chekol]<br /> -->
 
-                    <ul>
+                    <!-- <ul>
                         <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
                             (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
                         <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
@@ -1611,98 +1618,66 @@
                             (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
                         <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
                             (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
-                    </ul>
+                    </ul> -->
 
                 </td>
             </tr>
             <tr>
-                <td class="color-pink" colspan="2">
-                    <b>Nettuno</b>
+                <td class="color-yellow" colspan="2">
+                    <b>A1 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    EDBT Session 6: <b>Streams</b><br />
-                    [Session Chair: Paolo Missier]<br />
+                    EDBT Session 10: 
+                    <!-- <b>Data Integration (2)</b><br /> -->
+                    <!-- [Session Chair: Mel Chekol]<br /> -->
 
-                    <ul>
-                        <li>[Experiments &amp; Analysis]<i>Benchmarking Stream Join Algorithms on GPUs: A Framework and its Application to the
-                                State-of-the-art</i><br />
-                            (Dwi P. A. Nugroho, Philipp M Grulich, Steffen Zeuch, Clemens Lutz, Stefano Bortoli and
-                            Volker Markl)</li>
-                        <li><i>Deco: Fast and Accurate Decentralized Aggregation of Count-Based Windows in Large-Scale
-                                IoT Applications</i><br />
-                            (Wang Yue, Rafael Moczalla, Manisha Luthra and Tilmann Rabl)</li>
-                        <li><i>Bridging the Gap: Complex Event Processing on Stream Processing Systems</i><br />
-                            (Ariane Ziehn, Philipp M Grulich, Steffen Zeuch and Volker Markl)</li>
-                        <li>[Experiments &amp; Analysis] <i>Crayfish: Navigating the Labyrinth of Machine Learning
-                                Inference in Stream Processing Systems</i><br />
-                            (Sonia Horchidan, Po Hao Chen, Emmanouil Kritharakis, Paris Carbone and Vasiliki Kalavri)
-                        </li>
-                    </ul>
+                    <!-- <ul>
+                        <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
+                            (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
+                        <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
+                            (Martin Franke, Victor Christen, Peter Christen, Florens Rohde and Erhard Rahm)</li>
+                        <li>[Experiments &amp; Analysis] <i>Deep Clustering for Data Cleaning and Integration</i><br />
+                            (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
+                        <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
+                            (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
+                    </ul> -->
 
                 </td>
             </tr>
             <tr>
-                <td class="color-green" colspan="2">
-                    <b>Cassandra</b>
+                <td class="color-gray" colspan="2">
+                    <b>A2a Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>Tutorial 2: </b><i>Finding Relevant Information in Big Datasets with ML</i><br />
-                    (Uchechukwu Fortune Njoku, Alberto Abell&oacute;, Besim Bilalli, Gianaluca Bontempi)
+                    <b>Tutorial 3:</b> <i>Disaggregated Data System Architecture: State-of-the-Art and Open Challenges</i><br /> (Alexander Krause, Johannes Pietrzyk, Alexander Böhm)
                 </td>
             </tr>
             <tr>
-                <td rowspan="3">
-                    12:00 PM<br />-<br />1:30 PM
-                </td>
                 <td class="color-beige" colspan="2">
-                    <b>Mercurio</b>
+                    <b>Café & Aula Toivo</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    ICDT Session 7: <b>Operators and operations</b><br>
-                    [Session Chair: Reinhard Pichler]<br>
-
+                    <b>EDBT Demo Session 2</b>
+                    <br/>
                     <ul>
-                        <li><i>Skyline Operators for Document Spanners</i><br>
-                            (Antoine Amarilli, Benny Kimelfeld, S&eacute;bastien Labb&eacute; and Stefan Mengel)</li>
-                        <li><i>The Importance of Parameters in Database Queries</i><br>
-                            (Martin Grohe, Benny Kimelfeld, Peter Lindner and Christoph Standke)</li>
-                        <li><i>Conditional independence on semiring relations</i><br>
-                            (Miika Hannula)</li>
-                    </ul>
-
+                        <li><i>HistoricRAG: Evidence-Centered Newspaper Retrieval for Misinformation-Resilient Question Answering</i><br />(Stergios Konstantinidis and Michalis Vlachos)</li>
+                        <li><i>TwinDB: Interactive What-If Analysis for Digital Twins</i><br />(Xiufeng Liu, Ruyu Liu, Per Sieverts Nielsen and Hua Lu)</li>
+                        <li><i>PG-HIVE: Schema Discovery for Property Graphs (Demo Paper)</i><br/> 
+                        (Sophia Sideri, Ioannis Chiras, Myron Giakoumakis, Georgia Troullinou, Elisjana Ymeralli, Vasillis Efthymiou, Dimitris Plexousakis and Haridimos Kondylakis)</li>
+                        <li><i>Demonstrating PIPE-X: Supporting Iterative Pipeline Development Through Explanations</i><br/> 
+                        (Nadja Geisler, Benjamin Hättasch and Carsten Binnig)</li>
+                        <li><i>AnonymEx: An Interactive Platform for Exploring and Evaluating Anonymization Techniques through Re-identification Attacks</i><br/> 
+                        (Andrea Fieschi, Christoph Stach and Pascal Hirmer)</li>
+                        <li><i>MIMOSA: A Tool for Fairness Exploration Through Explanations</i><br/> 
+                        (Vasiliki Papanikou, Danae Pla Karidi, Evaggelia Pitoura, Emmanouil Panagiotou and Eirini Ntoutsi)</li>                    
+                        <li><i>PolyBooks: A System for Interactive Multi-Model Querying with Provenance and Reuse</i><br/> 
+                        (David Lengweiler, Tobias Weber, Heiko Schuldt and Marco Vogt)</li>
+                        <li><i>Click, Share, Learn: Teaching Data Science Using Apache Texera</i><br/> 
+                        (Sarah Asad, Xiaozhen Liu, Kun Woo Park, Xinyuan Lin, Jiadong Bai, Shengquan Ni, Yicong Huang and Chen Li)</li>
+                    </ul>   
                 </td>
             </tr>
-            <tr>
-                <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
-                </td>
-                <td class="left-align" colspan="10">
-                    <b>D&amp;I Tutorial:</b> <i>Interactive tutorial on giving inaccessible, unclear and boring
-                        presentations</i><br>
-                    (Julia Stoyanovich and Benny Kimelfeld)
-                </td>
-            </tr>
-            <tr>
-                <td class="color-pink" colspan="2">
-                    <b>Nettuno</b>
-                </td>
-                <td class="left-align" colspan="10">
-                    EDBT I&amp;A Session 1: <b>Enterprise data </b><br>
-                    [Session Chair: Volker Markl]<br>
-
-                    <ul>
-                        <li><i>Private and Efficient Federated Numerical Aggregation</i><br>
-                            (Graham Cormode, Harish Srinivas, Igor Markov)</li>
-                        <li><i>Pythagoras: Semantic Type Detection of Numerical Data in Enterprise Data Lakes</i><br>
-                            (Sven Langenecker, Christoph Sturm, Christian Schalles, Carsten Binnig)</li>
-                        <li><i>MyRaft: High Availability in MySQL using Raft</i><br>
-                            (Anirban Rahut, Vinaykumar Bhat, Abhinav Sharma, Yichen Shen, Bartlomiej Pelc, Chi Li,
-                            Ahsanul Haque, Yash Botadra, Xi Wang, Michael Percy, Ritwik Yadav, Yoshinori Matsunobu, Alan
-                            Liang, Igor Pozgaj, Tobias Asplund, Anatoly Karp, Luqun Lou, Pushap Goyal)</li>
-                    </ul>
-
-                </td>
-            </tr>
+            
             <tr>
                 <td>
 
@@ -1713,48 +1688,129 @@
             </tr>
             <tr>
                 <td>
-                    2:30 PM<br />-<br />4:00 PM
+                    2:00 PM<br />-<br />3:00 PM
+                </td>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td colspan="10" class="left-align">
+                    <b>DEI Keynote: </b><i>Why is Ethical Competence Important to all Computer Scientists: A Human-Computer Interaction Perspective</i>
+                    <br />
+                    (Thomas Olsson)
+                    <br />
+                    <!-- [Session Chair: Graham Cormode] -->
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+                <td colspan="12">
+                    <b>Break</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="5">
+                    3:15 PM<br />-<br />4:15 PM
                 </td>
                 <td class="color-blue" colspan="2">
-                    <b>Saturno</b>
+                    <b>D11 Auditorium</b>
                 </td>
                 <td class="left-align" colspan="10">
-                    <b>EDBT/ICDT Awards Ceremony</b><br>
-                    [Session Chairs: Giuseppe Polese, Loredana Caruccio, Letizia Tanca, Qiong Luo, Graham Cormode,
-                    Reinhard Pichler]<br>
-                    <br />
-                    <b>EDBT/ICDT ToT Presentations</b>
-                    <ul>
-                        <li>[ICDT] <i>Leapfrog Triejoin: A Simple, Worst-Case Optimal Join Algorithm</i><br>
-                            (Todd L. Veldhuizen)</li>
-                        <li>[EDBT] [Online Presentation] <i>Reachability Queries in Very Large Graphs: A Fast Refined
-                                Online Search
-                                Approach</i><br>
-                            (Renê R. Veloso, Loïc Cerf, Wagner Meira Jr, and Mohammed J. Zaki)</li>
-                    </ul>
+                    ICDT Session 7: 
+                    <!-- <b>Algorithms for queries</b><br /> -->
+                    <!-- [Session Chair: Cristian Riveros Jaeger]<br /> -->
+                    <!-- <ul>
+                        <li><i>Approximating Single-Source Personalized PageRank with Absolute Error
+                                Guarantees</i><br />
+                            (Zhewei Wei, Ji-Rong Wen and Mingji Yang)</li>
+                        <li><i>Join Sampling under Acyclic Degree Constraints and (Cyclic) Subgraph Sampling</i><br />
+                            (Ru Wang and Yufei Tao)</li>
+                        <li><i>Range Entropy Queries and Partitioning</i><br />
+                            (Sanjay Krishnan and Stavros Sintos)</li>
+                    </ul> -->
+                </td>
+            </tr>
+            <tr>
+                <td class="color-green" colspan="2">
+                    <b>A1 Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    EDBT Session 11: 
+                    <!-- <b>Data Integration (2)</b><br /> -->
+                    <!-- [Session Chair: Mel Chekol]<br /> -->
+
+                    <!-- <ul>
+                        <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
+                            (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
+                        <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
+                            (Martin Franke, Victor Christen, Peter Christen, Florens Rohde and Erhard Rahm)</li>
+                        <li>[Experiments &amp; Analysis] <i>Deep Clustering for Data Cleaning and Integration</i><br />
+                            (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
+                        <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
+                            (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
+                    </ul> -->
 
                 </td>
             </tr>
             <tr>
-                <td>
-                    4:00 PM<br />-<br />7:30 PM
+                <td class="color-yellow" colspan="2">
+                    <b>A3 Auditorium</b>
                 </td>
-                <td colspan="12" class="padding-60">
-                    <b>Visit Paestum Archeological Area</b>
+                <td class="left-align" colspan="10">
+                    EDBT Session 12: 
+                    <!-- <b>Data Integration (2)</b><br /> -->
+                    <!-- [Session Chair: Mel Chekol]<br /> -->
+
+                    <!-- <ul>
+                        <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
+                            (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
+                        <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
+                            (Martin Franke, Victor Christen, Peter Christen, Florens Rohde and Erhard Rahm)</li>
+                        <li>[Experiments &amp; Analysis] <i>Deep Clustering for Data Cleaning and Integration</i><br />
+                            (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
+                        <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
+                            (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
+                    </ul> -->
+
                 </td>
             </tr>
             <tr>
-                <td>
-                    7:30 PM<br />-<br />11:00 PM
+                <td class="color-teal" colspan="2">
+                    <b>A4 Auditorium</b>
                 </td>
-                <td colspan="12" class="color-dark-pink padding-60">
-                    <b>Conference Dinner [NEXT - New Exposition of the eX Tobacco factory]</b>
+                <td class="left-align" colspan="10">
+                    EDBT Session 13: 
+                    <!-- <b>Data Integration (2)</b><br /> -->
+                    <!-- [Session Chair: Mel Chekol]<br /> -->
+
+                    <!-- <ul>
+                        <li><i>WDC Products: A Multi-Dimensional Entity Matching Benchmark</i><br />
+                            (Ralph Peeters, Reng Chiz Der and Christian Bizer)</li>
+                        <li><i>(Privately) Estimating Linkage Quality for Record Linkage</i><br />
+                            (Martin Franke, Victor Christen, Peter Christen, Florens Rohde and Erhard Rahm)</li>
+                        <li>[Experiments &amp; Analysis] <i>Deep Clustering for Data Cleaning and Integration</i><br />
+                            (Hafiz Tayyab Rauf, Andr&eacute; Freitas and Norman Paton)</li>
+                        <li><i>TASHEEH: Repairing Row-Structure in Raw CSV Files</i><br />
+                            (Mazhar Hameed, Gerardo Vitagliano, Fabian Panse and Felix Naumann)</li>
+                    </ul> -->
+
                 </td>
             </tr>
+            <tr>
+                <td class="color-coral" colspan="2">
+                    <b>D10b Auditorium</b>
+                </td>
+                <td class="left-align" colspan="10">
+                    <b>Young Researchers Symposium III - Panel</b>
+                </td>
+            </tr>
+            
         </tbody>
     </table>
 
-    <table class="main-table  display-none" id="day-4">
+    <table class="main-table display-none" id="day-4">
         <tbody>
             <tr class="void-row">
                 <td></td>
