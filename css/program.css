@@ -118,3 +118,7 @@
             margin: 0;
             border: none;
         }
+
+        td[class*='color-'] {
+           cursor: pointer;
+        }
